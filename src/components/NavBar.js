@@ -6,10 +6,10 @@ export const NavBar = () =>{
     return(
 <nav>
 
-        <NavLink to="/">{<Index/>}</NavLink>
+        <NavLink className="index-link"  to="/">{<Index/>}</NavLink>
         <NavLink
          to="/home"
-         activeClassName="selectedLink">
+         ClassName="home-link">
           {<Home/>}
         </NavLink>
 </nav>
