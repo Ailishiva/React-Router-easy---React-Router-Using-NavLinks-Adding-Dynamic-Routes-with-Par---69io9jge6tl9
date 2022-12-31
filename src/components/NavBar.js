@@ -5,13 +5,15 @@ import { Home } from '../Pages/Home';
 export const NavBar = () =>{
     return(
 <nav>
-
-        <NavLink className="index-link"  to="/">{<Index/>}</NavLink>
-        <NavLink
+  <ul>
+       <li> <NavLink className="index-link"  to="/">{<Index/>}</NavLink></li>
+        <li><NavLink
          to="/home"
          ClassName="home-link">
           {<Home/>}
         </NavLink>
+        </li>
+        </ul>
 </nav>
     )
 }
