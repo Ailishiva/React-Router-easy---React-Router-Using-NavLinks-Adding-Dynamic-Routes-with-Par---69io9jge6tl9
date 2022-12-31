@@ -1,19 +1,22 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { Index } from '../Pages/Index';
-import { Home } from '../Pages/Home';
+import {  NavLink } from 'react-router-dom';
 export const NavBar = () =>{
     return(
 <nav>
   <ul>
-       <li> <NavLink className="index-link"  to="/">{<Index/>}</NavLink></li>
-        <li><NavLink
-         to="/home"
-         ClassName="home-link">
-          {<Home/>}
-        </NavLink>
+       <li> 
+          <NavLink className="index-link" to={"/"} >
+           Index
+          </NavLink>
         </li>
-        </ul>
+        <li>
+            <NavLink
+            to={"/home"}
+            className="home-link">
+            Home
+            </NavLink>
+        </li>
+    </ul>
 </nav>
     )
 }
