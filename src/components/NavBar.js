@@ -5,13 +5,13 @@ export const NavBar = () =>{
 <nav>
   <ul>
        <li> 
-          <NavLink className="index-link" to={"/"} >
+          <NavLink className="index-link"  to={"/"} >
            Index
           </NavLink>
         </li>
         <li>
             <NavLink
-            to={"/home"}
+              to={"/home"}
             className="home-link">
             Home
             </NavLink>
