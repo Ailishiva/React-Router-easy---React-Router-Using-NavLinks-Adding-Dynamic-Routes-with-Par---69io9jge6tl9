@@ -4,17 +4,18 @@ export const NavBar = () =>{
     return(
 <nav>
   <ul>
+        {" "}
        <li> 
-          <Link className="index-link" to={"/"} >
+          <NavLink className="index-link" to={"/"} >
            Index
-          </Link>
+          </NavLink>
         </li>
         <li>
-            <Link
+            <NavLink
             to={"/home"}
             className="home-link">
             Home
-            </Link>
+            </NavLink>
         </li>
     </ul>
 </nav>
